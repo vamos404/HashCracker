@@ -1,5 +1,5 @@
 # HashCracker
-<b>HashCracker</b>is an hash cracking tool written in python. As of now, it supports mentioned hashing algorithms: md5, sha1, sha224, sha256, sha512. <b> [ I have made this HashMaker as the part of my learning python & it's not as extensive as regular hash cracking tool ! ] </b>
+<b>HashCracker</b> is an hash cracking tool written in python. As of now, it supports mentioned hashing algorithms: md5, sha1, sha224, sha256, sha512. <b> [ I have made this HashMaker as the part of my learning python & it's not as extensive as regular hash cracking tool ! ] </b>
 
 # Notes
 Python3 have to be installed
