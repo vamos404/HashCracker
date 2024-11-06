@@ -1,0 +1,32 @@
+#!/bin/usr/python
+
+from termcolor import colored
+import hashlib
+
+def tryOpen(wordlist):
+	global pass_file
+	try:
+		pass_file = open(wordlist, "r")
+	except:
+		print("[!!] File doesn't exist")
+		quit()
+
+pass_hash = input("[*] Enter the  hash value: ")
+wordlist = input("[*] Enter path to the password file: ")
+tryOpen(wordlist)
+
+
+for word in pass_file:
+	print(colored("[-] Trying: " + word.strip("\n"), 'red'))
+	enc_wrd = word.encode('utf-8')
+	md5digest = hashlib.md5(enc_wrd.strip()).hexdigest()
+	sha1digest = hashlib.sha1(enc_wrd.strip()).hexdigest()
+	sha224digest = hashlib.sha224(enc_wrd.strip()).hexdigest()
+	sha256digest = hashlib.sha256(enc_wrd.strip()).hexdigest()
+	sha512digest = hashlib.sha512(enc_wrd.strip()).hexdigest()
+
+	if ( md5digest == pass_hash or  sha1digest == pass_hash or sha224digest == pass_hash or sha256digest == pass_hash or sha512digest == pass_hash ):
+		print(colored("[+] Password Found: " + word, 'green'))
+		exit(0)
+
+print("[!!] Password not in list")
