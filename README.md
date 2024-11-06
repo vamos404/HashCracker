@@ -10,6 +10,6 @@ Python3 have to be installed
 3. Share the password list you want to use.
 
 
-![image](https://github.com/user-attachments/assets/1e600d6b-3d60-4ea1-a663-4b7dcafd2894)
+![image](https://github.com/user-attachments/assets/85783347-333b-4771-8beb-a33ec41435ea)
 
 ![image](https://github.com/user-attachments/assets/e3b8acd8-c140-4c4d-9920-024253b90410)
